@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../../assets/images/logo.svg';
-import avatar from '../../assets/images/image-avatar.png';
+import logo from '../assets/images/logo.svg';
+import avatar from '../assets/images/image-avatar.png';
 import { Cart } from './Cart';
 
 export const Navbar = ({ cartProductQuantity, setCartProductQuantity }) => {

@@ -105,3 +105,39 @@ body {
   background-color: $Orange;
   opacity: 0.5;
 }
+
+.lightbox-control {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+
+  &:hover svg path,
+  &:focus svg path {
+    stroke: $Orange;
+  }
+}
+
+.thumbnail {
+  border-radius: 0.5rem;
+  background-color: $white;
+
+  & > img {
+    cursor: pointer;
+    width: 88px;
+    aspect-ratio: 1;
+
+    & > img:hover,
+    & > img:focus {
+      filter: opacity(0.5);
+    }
+  }
+
+  .active {
+    filter: opacity(0.35);
+    border: 1px solid $Orange;
+  }
+}

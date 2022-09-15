@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { productData } from '../../data/productData';
-import plusIcon from '../../assets/images/icon-plus.svg';
-import minusIcon from '../../assets/images/icon-minus.svg';
+import { productData } from '../data/productData';
+import plusIcon from '../assets/images/icon-plus.svg';
+import minusIcon from '../assets/images/icon-minus.svg';
 import { Lightbox } from './Lightbox';
 
 export const Product = ({
@@ -106,24 +106,24 @@ export const Product = ({
           )}
         </div>
         <div className="product-description flow">
-          <p className="text-uppercase fw-700 fs-100 letter-spacing-1 clr-primary-400">
+          <p className="text-uppercase fw-700 fs-100 letter-spacing-1 Orange">
             Sneaker Company
           </p>
-          <h1 className="fw-700 line-height-300 fs-800 clr-neutral-900">
+          <h1 className="fw-700 line-height-300 fs-800 blue">
             Fall Limited Edition Sneakers
           </h1>
-          <p className="fw-400 line-height-500 fs-400 clr-neutral-700">
+          <p className="fw-400 line-height-500 fs-400 darkGrayishBlue">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </p>
           <div className="product-price">
             <div className="discounted-price flex">
-              <span className="fw-700 clr-neutral-900 fs-700">$125.00</span>
-              <span className="offer fw-700 fs-400 clr-primary-400">50%</span>
+              <span className="fw-700 blue fs-700">$125.00</span>
+              <span className="offer fw-700 fs-400 Orange">50%</span>
             </div>
             <div className="original-price">
-              <span className="fw-700 fs-400 line-height-500 text-line-through clr-neutral-400">
+              <span className="fw-700 fs-400 line-height-500 text-line-through GrayishBlue">
                 $250.00
               </span>
             </div>
@@ -140,9 +140,7 @@ export const Product = ({
                   )
                 }
               />
-              <span className="fw-700 fs-400 clr-neutral-900">
-                {productQuantity}
-              </span>
+              <span className="fw-700 fs-400 blue">{productQuantity}</span>
               <img
                 src={plusIcon}
                 alt=""

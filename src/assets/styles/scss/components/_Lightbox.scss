@@ -33,20 +33,8 @@
     }
 
     .lightbox-control {
-      cursor: pointer;
-      position: absolute;
       display: flex;
-      justify-content: center;
-      align-items: center;
       width: 56px;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      border: none;
-
-      &:hover svg path,
-      &:focus svg path {
-        stroke: $Orange;
-      }
     }
 
     .control-prev {

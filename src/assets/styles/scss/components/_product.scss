@@ -17,27 +17,6 @@
       .thumbnail-wrapper {
         align-items: center;
         gap: 2rem;
-
-        .thumbnail {
-          border-radius: 0.5rem;
-          background-color: $white;
-
-          & > img {
-            cursor: pointer;
-            width: 88px;
-            aspect-ratio: 1;
-
-            & > img:hover,
-            & > img:focus {
-              filter: opacity(0.5);
-            }
-          }
-
-          .active {
-            filter: opacity(0.35);
-            border: 1px solid $Orange;
-          }
-        }
       }
     }
 
@@ -127,18 +106,6 @@
 
         .lightbox-control {
           width: 40px;
-          aspect-ratio: 1;
-          position: absolute;
-          cursor: pointer;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          border: none;
-
-          &:hover svg path,
-          &:focus svg path {
-            stroke: $Orange;
-          }
         }
 
         .control-prev {
