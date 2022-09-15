@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 import avatar from '../../assets/images/image-avatar.png';
+import { Cart } from './Cart';
 
 export const Navbar = ({ cartProductQuantity, setCartProductQuantity }) => {
   const [openCart, setOpenCart] = useState(false);
@@ -97,13 +98,13 @@ export const Navbar = ({ cartProductQuantity, setCartProductQuantity }) => {
             <img src={avatar} alt="Avatar" className="avatar" />
           </div>
 
-          {/* {openCart && (
+          {openCart && (
             <Cart
               setOpenCart={setOpenCart}
               cartProductQuantity={cartProductQuantity}
               setCartProductQuantity={setCartProductQuantity}
             />
-          )} */}
+          )}
         </div>
       </header>
     </>
